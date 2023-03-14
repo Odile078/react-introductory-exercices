@@ -2,8 +2,10 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>react introductory exercises</h1>
+    <div className="page-container">
+      <div className="container">
+        <h1>Hello, World!</h1>
+      </div>
     </div>
   );
 }
