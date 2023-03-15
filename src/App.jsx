@@ -1,9 +1,21 @@
 import "./App.css";
+import ListItem from "./components/ListItem";
 
 function App() {
   return (
     <div className="App">
-      <h1>react introductory exercises</h1>
+      <ul>
+        {[
+          "🐶 dog",
+          "🐱 cat",
+          "🐔 chicken",
+          "🐮 cow",
+          "🐏 sheep",
+          "🐴 horse",
+        ].map((item, index) => (
+          <ListItem key={index}>{item}</ListItem>
+        ))}
+      </ul>
     </div>
   );
 }
