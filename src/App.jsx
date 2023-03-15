@@ -2,7 +2,7 @@ import "./App.css";
 
 function App() {
   const btnAlert = () => {
-    return alert("Click me");
+    return alert("Clicked");
   };
   return (
     <div className="page-container">
