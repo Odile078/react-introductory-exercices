@@ -17,7 +17,7 @@ function App() {
             },
             {
               name: "exercise2",
-              url: "https://deploy-preview-2--clever-naiad-78d51b.netlify.app/",
+              url: "https://deploy-preview-3--clever-naiad-78d51b.netlify.app/",
             },
             {
               name: "exercise3",
