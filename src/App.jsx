@@ -3,7 +3,13 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
-      <h1>react introductory exercises</h1>
+      <ul>
+        {["dog", "cat", "chicken", "cow", "sheep", "horse"].map(
+          (item, index) => (
+            <li key={index}>{item}</li>
+          )
+        )}
+      </ul>
     </div>
   );
 }
