@@ -29,6 +29,7 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #a8debc;
 }
 
 h1 {
@@ -66,4 +67,24 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+}
+.card-setup{
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #151c47;
+}
+.card-punchline{
+  font-size: 1rem;
+  color: #151c47;
 }
