@@ -1,9 +1,6 @@
 import "./App.css";
-
-function App() {
-  const btnAlert = () => {
-    return alert("Clicked");
-  };
+const App = () => {
+  const btnAlert = () => alert("Clicked");
   return (
     <div className="page-container">
       <div className="nav-container">
@@ -58,6 +55,6 @@ function App() {
       </button>
     </div>
   );
-}
+};
 
 export default App;
