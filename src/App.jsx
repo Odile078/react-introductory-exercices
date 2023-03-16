@@ -2,11 +2,13 @@ import { useState } from "react";
 import "./App.css";
 
 function App() {
-  const [firstName, setFirstName] = useState("");
-  const [lastName, setLastName] = useState("");
-  const handleFormSubmit = () => {
-    alert(`Hello ${firstName} ${lastName} !`);
-  };
+  const [formData, setFormData] = useState({
+    firstName: "",
+    lastName: "",
+  });
+  const handleFormSubmit = () =>
+    alert(`Hello ${formData.firstName} ${formData.lastName} !`);
+
   return (
     <div className="page-container">
       <div className="nav-container">
@@ -62,7 +64,9 @@ function App() {
             type="text"
             placeholder="First name"
             className="form-input"
-            onChange={(e) => setFirstName(e?.target?.value)}
+            onChange={(e) =>
+              setFormData({ ...formData, firstName: e?.target?.value })
+            }
           />
         </div>
         <div>
@@ -70,7 +74,9 @@ function App() {
             type="text"
             placeholder="Last name"
             className="form-input"
-            onChange={(e) => setLastName(e?.target?.value)}
+            onChange={(e) =>
+              setFormData({ ...formData, lastName: e?.target?.value })
+            }
           />
         </div>
         <button type="button" onClick={handleFormSubmit} className="form-btn">
