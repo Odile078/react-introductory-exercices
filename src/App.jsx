@@ -13,7 +13,6 @@ function App() {
     const data = await res.json();
     setUsers(data);
     setLoading(false);
-    console.log("fetching", data);
   };
   useEffect(() => {
     getUsers();
